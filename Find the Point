@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,p1,p2,q1,q2,r1,r2;
+    cin>>n;
+    while(n--)
+    {
+        cin>>p1>>p2>>q1>>q2;
+        if(p1<q1)
+        {
+            r1=q1+(q1-p1);
+        }
+        else r1=q1-(p1-q1);
+        if(p2<q2) r2=q2+(q2-p2);
+        else r2=q2-(p2-q2);
+        cout<<r1<<" "<<r2<<endl;
+    }
+}
