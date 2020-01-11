@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long int a,b;
+    cin>>b>>a;
+    double n=(2*a);
+    n=ceil(n/b);
+    if(b==1) cout<<2*a<<endl;
+    else
+    cout<<n<<endl;
+
+}
