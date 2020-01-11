@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+        int c=0,a=0,i;
+        string s,hack="abcdefghijklmnopqrstuvwxyz";
+        getline(cin, s);
+        for(i=0;i<s.size();i++){
+
+            {
+                s[i]=tolower(s[i]);
+            }
+        }
+
+         sort(s.begin(),s.end());
+
+        for(i=0;i<s.size();i++)
+        {
+            if(s[i]!=' ')
+
+                            if(hack.size()>c&&s[i]==hack[c]) c++;
+
+        }
+        if(c>=hack.size())
+        {
+            cout<<"pangram"<<endl;
+        }
+        else cout<<"not pangram"<<endl;
+
+}
+
