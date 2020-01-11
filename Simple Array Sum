@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long int a,s=0,b;
+    cin>>a;
+    for(int i=1;i<=a;i++)
+    {
+        cin>>b;
+        s+=b;
+    }
+    cout<<s;
+
+}
