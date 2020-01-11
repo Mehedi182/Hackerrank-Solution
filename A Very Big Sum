@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int n,x,i,sum=0;
+    vector<long long >v;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cin>>x;
+        sum+=x;
+    }
+    cout<<sum;
+}
